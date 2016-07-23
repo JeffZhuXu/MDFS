@@ -103,7 +103,7 @@ public class HttpDownloadUtil {
             @Override
             public void run() {
 
-                //首先判定这个文件存不存在，不存在的话再访问服务器
+                //首先判定这个文件存不存在，不存在的话再访问服务器123
                 File file = new File(blocksLocalUrl + fileName);
                 //存在的话，不执行操作
                 if (file.exists()) {
