@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_main" tools:context=".MainActivity">
+
+    <TextView android:text="Hello World!" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainTextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="下一个activity"
+        android:id="@+id/nextAty"
+        android:layout_below="@+id/mainTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="82dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动服务"
+        android:id="@+id/startServicebutton"
+        android:layout_below="@+id/nextAty"
+        android:layout_alignLeft="@+id/nextAty"
+        android:layout_alignStart="@+id/nextAty"
+        android:layout_marginTop="49dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止服务"
+        android:id="@+id/endServiceButton"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/startServicebutton"
+        android:layout_alignStart="@+id/startServicebutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绑定服务"
+        android:id="@+id/boundServicebutton"
+        android:layout_below="@+id/endServiceButton"
+        android:layout_alignLeft="@+id/endServiceButton"
+        android:layout_alignStart="@+id/endServiceButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="解绑服务"
+        android:id="@+id/unBoundbutton"
+        android:layout_below="@+id/boundServicebutton"
+        android:layout_alignLeft="@+id/boundServicebutton"
+        android:layout_alignStart="@+id/boundServicebutton" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="服务信息"
+        android:ems="10"
+        android:id="@+id/data"
+        android:layout_alignTop="@+id/startServicebutton"
+        android:layout_toRightOf="@+id/nextAty"
+        android:layout_toEndOf="@+id/nextAty" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同步数据到绑定服务"
+        android:id="@+id/syncbutton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/unBoundbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="打开带有fragmentActivity"
+        android:id="@+id/fragmentbutton"
+        android:layout_below="@+id/syncbutton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动带侧边栏的activity"
+        android:id="@+id/startSliderbutton"
+        android:layout_above="@+id/boundServicebutton"
+        android:layout_alignLeft="@+id/data"
+        android:layout_alignStart="@+id/data" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启动一个framlayout"
+        android:id="@+id/startFrameLayoutbutton"
+        android:layout_alignTop="@+id/boundServicebutton"
+        android:layout_alignRight="@+id/startSliderbutton"
+        android:layout_alignEnd="@+id/startSliderbutton" />
+
+</RelativeLayout>

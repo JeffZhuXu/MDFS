@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">MDFS</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_another_aty">AnotherAty</string>
+    <string name="title_activity_lunch">LunchActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_activity_fragment">activity_fragment</string>
+    <string name="title_activity_test">Test</string>
+    <string name="title_activity_aa">AAA</string>
+    <string name="title_activity_slider">Slider</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_tabbed_aty">TabbedAty</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_code">Code</string>
+    <string name="title_activity_frame">FrameA</string>
+</resources>
