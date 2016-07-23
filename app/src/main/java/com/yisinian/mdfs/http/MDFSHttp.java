@@ -367,7 +367,7 @@ public class MDFSHttp {
                                     aTaskMsg.finishTime = finishTime;
                                     aTaskMsg.blockId = blockId;
                                     TaskMessageDao.saveTaskMessage(context, aTaskMsg);
-                                    //如果是文件检索类任务
+                                    //如果是文件检索类任务12
                                     if (aTaskMsg.taskType.equals("文件检索")) {
                                         TaskUtil.searchFileA(context, aTaskMsg);
                                         break;
